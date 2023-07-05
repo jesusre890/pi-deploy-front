@@ -1,0 +1,21 @@
+.buttonP {
+    --size: 32px;
+    --margin: 6px;
+    margin: 0 var(--margin);
+    border-radius: 20px;
+    background: whitesmoke;
+    max-width: auto;
+    min-width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 6px;
+    color: rgb(45, 85, 55);
+  }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}

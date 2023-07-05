@@ -1,0 +1,291 @@
+.containerF {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+
+.formContainer {
+  background-color: #fff;
+  display: block;
+  padding: 1rem;
+  max-width: 350px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.formTitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer input,
+.form button {
+  outline: none;
+  border: 1px solid #e5e7eb;
+  margin: 8px 0;
+}
+
+.inputContainer input {
+  background-color: #fff;
+  /*padding: 1rem;
+  padding-right: 3rem;*/
+  height: 30px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.selectType {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 0.9em;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.spanError {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.divDelete {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+}
+
+.typeElegido {
+  padding: 0.2em 0.7em;
+  background-color: #2743a8;
+  border-radius: 0.3em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 13px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+  border-radius: 30px;
+  width: 100px;
+}
+
+.guia1 {
+  margin-bottom: 10px;
+}
+
+.guiaP {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.botonX {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
+}
+
+.botonX:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1.5em;
+}
+
+.typeS {
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.selectType:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1em;
+}
+
+.buttonCrear {
+  --color: #315cfd;
+  padding: 0.8em 1.7em;
+  background-color:#dbdbdb;
+  border-radius: 1.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 600;
+  font-size: 17px;
+  border: 2px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+
+.buttonCrear::before,
+.buttonCrear::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+}
+
+.buttonCrear::before {
+  top: -1em;
+  left: -1em;
+}
+
+.buttonCrear::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.buttonCrear:hover::before,
+.buttonCrear:hover::after {
+  height: 310px;
+  width: 410px;
+}
+
+.buttonCrear:hover {
+  color: rgb(10, 25, 30);
+}
+
+.buttonCrear:active {
+  filter: brightness(0.8);
+}
+
+.buttonVolver {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.spanV {
+  margin-bottom: -8.5px;
+}
+
+.buttonVolver > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+}
+
+.buttonVolver:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.buttonVolver:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
+
+.spanBo {
+  text-decoration: none;
+}
+
+.containerGuia {
+  margin-top: 50px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  padding: 20px;
+  color: #575757;
+}
+
+.containerGuia p {
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-hor-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+.linkParaCrear {
+  color: darkorange;
+}
+
+.snorlax {
+  transition: all 0.4s;
+}
+
+.snorlax:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
